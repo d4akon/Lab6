@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <canvas id="canvas" width="1920" height="500"></canvas>
+      <canvas id="canvas" width="800" height="600"></canvas>
       <br />
       <input
         type="range"
@@ -18,12 +18,34 @@
         step="1"
         value="10"
       />
-      <label for="numberOfBalls">Liczba kulek:</label>
-      <output id="numberOfBallsOutput"></output>
+      <label for="numberOfBalls">Number of Balls:</label>
+      <output id="numberOfBallsOutput">10</output>
       <br />
       <input type="range" id="threshold" min="1" max="50" step="1" value="20" />
-      <label for="threshold">Próg (%):</label>
-      <output id="thresholdOutput"></output>
+      <label for="threshold">Threshold (%):</label>
+      <output id="thresholdOutput">20</output>
+      <br />
+      <input
+        type="range"
+        id="repelForce"
+        min="1"
+        max="50"
+        step="1"
+        value="10"
+      />
+      <label for="repelForce">Repel Force:</label>
+      <output id="repelForceOutput">10</output>
+      <br />
+      <input
+        type="range"
+        id="splitForce"
+        min="1"
+        max="50"
+        step="1"
+        value="10"
+      />
+      <label for="splitForce">Split Force:</label>
+      <output id="splitForceOutput">10</output>
       <br />
       <button id="startButton">Start</button>
       <button id="resetButton">Reset</button>
